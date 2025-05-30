@@ -65,6 +65,7 @@ Bedingungen systematisch und zielgerichtet Schwachstellen zu analysieren und aus
 professionell. Diese Erfahrung hat mein Vertrauen in meine Fähigkeiten als angehender IT-Sicherheitsexperte weiter gestärkt.
 
 Und das war erst der Anfang.
+>27.05.2025
 
 ---
 
