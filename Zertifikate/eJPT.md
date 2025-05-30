@@ -1,6 +1,6 @@
 # Mein Weg zur eJPT-Zertifizierung – Zwei intensive Tage voller Hacking und Erkenntnisse
 
-Nach etwa drei Monaten intensiven Lernens auf Plattformen wie TryHackMe und Hack The Box fühlte ich mich bereit, 
+Nach etwa drei Monaten intensiven Lernens auf Plattformen wie TryHackMe und HackTheBox fühlte ich mich bereit, 
 den nächsten Schritt zu gehen. Ich hatte in dieser Zeit viele Grundlagen verinnerlicht: Reconnaissance, 
 Schwachstellenanalysen, Exploits und die Anwendung diverser Tools wie `nmap`, `dirb`, `hydra`, `john`, `Metasploit` und andere. 
 
