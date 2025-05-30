@@ -10,5 +10,5 @@ Begleite mich auf meiner Reise durch die Welt der IT-Sicherheit!
 
 ---
 
-<span style="color:gray;">Dieser Blog wird regelmäßig mit neuen Beiträgen aktualisiert.</span>
+>Dieser Blog wird regelmäßig mit neuen Beiträgen aktualisiert.
 
