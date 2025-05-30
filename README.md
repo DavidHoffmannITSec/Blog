@@ -8,7 +8,7 @@ Ziel dieses Blogs ist es, transparent zu zeigen, was ich kann und an welchen The
 
 Begleite mich auf meiner Reise durch die Welt der IT-Sicherheit!
 
----
+
 
 >Dieser Blog wird regelmäßig mit neuen Beiträgen aktualisiert.
 
