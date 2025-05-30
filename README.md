@@ -2,7 +2,7 @@
 
 Dies ist mein persönlicher Blog, in dem ich meine Erfahrungen und Erkenntnisse als IT-Sicherheitsexperte teile.
 
-Ich dokumentiere hier meinen beruflichen Weg — angefangen von den Anfängen meiner Karriere als Softwareentwickler bis hin zu meinen zukünftigen Entwicklungen und Projekten im Bereich IT-Security.
+Ich dokumentiere hier meinen beruflichen Weg, angefangen von den Anfängen meiner Karriere als Softwareentwickler bis hin zu meinen zukünftigen Entwicklungen und Projekten im Bereich IT-Security.
 
 Ziel dieses Blogs ist es, transparent zu zeigen, was ich kann und an welchen Themen ich arbeite, aber auch offen über Herausforderungen und Lernfelder zu sprechen.
 
