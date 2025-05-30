@@ -1,4 +1,4 @@
-# Mein Weg als Fachinformatiker Anwendungsentwicklung in Würzburg
+# Mein Weg als Fachinformatiker Anwendungsentwicklung
 
 Meine schulische Ausbildung zum Fachinformatiker für Anwendungsentwicklung absolvierte ich in Würzburg. 
 Diese Zeit war für mich der Grundstein, um tiefgehendes Fachwissen in der Softwareentwicklung und IT zu erlangen 
