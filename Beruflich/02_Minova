@@ -1,0 +1,61 @@
+# 🚀 Mein Einstieg in die Softwareentwicklung: 7 Monate bei Minova Würzburg
+
+Als ich im Sommer frisch meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung abgeschlossen hatte, war ich aufgeregt, aber auch hungrig nach echter Projekterfahrung. Ich wollte endlich das anwenden, was ich in der Theorie gelernt hatte – nicht mehr nur im geschützten Rahmen der Berufsschule oder kleiner Übungsprojekte, sondern mitten im echten Entwickleralltag.
+
+Und dann war es so weit: **Minova in Würzburg** – ein mittelständisches Softwareunternehmen, modern, agil und offen – wurde mein erster Arbeitgeber. Ich war neu, motiviert und ehrlich gesagt ein bisschen nervös. Ich kannte zwar die Grundlagen von Java, Webtechnologien und Co., aber was bedeutete es wirklich, in einem Team zu entwickeln, ein Produkt zu bauen, Verantwortung zu tragen?
+
+## Die ersten Tage: Eintauchen in eine neue Welt
+
+Die ersten zwei Wochen waren intensiv. Ich lernte das Team kennen – allesamt hilfsbereit, erfahren, aber bodenständig. Ich sog alles auf: wie das Projektmanagement lief, welche Tools zum Einsatz kamen, wie der Code organisiert war, und natürlich, wie sich Minova als Unternehmen positionierte.
+
+In dieser Einarbeitungsphase klickte ich mich durch Code-Repositories, spielte mit kleinen UI-Komponenten herum und durfte erste Bugfixes ausprobieren. Noch nichts Weltbewegendes – aber genau das Richtige, um reinzukommen.
+
+Dann, am Ende der zweiten Woche, klopfte mein Teamleiter an meinen digitalen Schreibtisch.
+
+> "David, hättest du Lust, ein kleines Projekt selbstständig zu übernehmen?"
+
+Ich sagte ohne Zögern: **„Ja.“**
+
+## Mein erstes eigenes Projekt: Von Pixel zu Echtzeit
+
+Ich bekam eine bestehende **Bitmap-Karte**, auf der Fahrzeugdaten visuell dargestellt wurden – ziemlich statisch, wenig interaktiv und technisch nicht mehr zeitgemäß. Meine Aufgabe: daraus eine **moderne, interaktive Live-Karte** machen, mit der Nutzer in Echtzeit sehen konnten, wo sich Fahrzeuge befinden – mit allem Drum und Dran.
+
+Ich war begeistert. Und auch ein bisschen überfordert.
+
+Ich entschied mich dafür, mit **JavaScript**, **HTML** und einer **OpenStreetMap-API** zu arbeiten. Zum einen, weil ich wusste, dass OSM offen und flexibel war – und zum anderen, weil ich spürte, dass ich hier nicht nur eine Aufgabe löste, sondern **etwas baute**, das später tatsächlich **verwendet** wird.
+
+## Die Entstehung: Tüfteln, Testen, Lernen
+
+Die ersten Wochen waren ein ständiges Wechselspiel aus Experimentieren, Googeln und Debuggen. Ich fing an, die ersten Kartenlayer zu laden, bastelte mit verschiedenen Icon-Typen herum, spielte mit Koordinatenprojektionen und lernte die Eigenheiten der API kennen. 
+
+Es war wie Lego-Spielen – nur, dass jedes falsche Teil den ganzen Turm zum Einsturz brachte.
+
+Ich schrieb JavaScript-Code, der kleine **Live-Icons** auf die Karte „ploppen“ ließ, wenn neue Fahrzeuge übermittelt wurden. Ich programmierte eine **Koordinatenumrechnung**, die die eingehenden Live-Daten korrekt auf die Kartenfläche transformierte – Pixel-genau.
+
+Stück für Stück wuchs das Projekt. Immer wieder baute ich neue Features ein: Zoomstufen, Tooltipps, Realtime-Updates über Websockets. Manchmal scheiterte ich an vermeintlich kleinen Details – wie dem Handling mehrerer Layer – aber genau diese Probleme machten mich besser.
+
+Vor allem aber lernte ich eins: **Fehler gehören zum Prozess.**
+
+## Nach 3 Monaten: Mein erstes fertiges Softwareprodukt
+
+Nach rund drei Monaten war es so weit: Die Livekarte war **fertig**. Natürlich nicht „perfekt“ – was ist das schon in der Softwareentwicklung? – aber sie lief stabil, war interaktiv, performant und wurde vom Team mit Begeisterung angenommen.
+
+Ich erinnere mich noch genau an den Moment, als ich das System das erste Mal komplett live sah: Wie die kleinen Icons sich auf der Karte bewegten, als neue Fahrzeugdaten eintrafen. Es fühlte sich an, als hätte ich einem digitalen Raum **Leben eingehaucht**.
+
+Was vorher ein statisches Bild war, war jetzt ein echtes Werkzeug. Und es stammte aus meiner Hand.
+
+## Rückblick: Was ich bei Minova wirklich gelernt habe
+
+Die 7 Monate bei Minova waren nicht einfach nur „ein Job“. Sie waren mein Einstieg in die echte Welt der Softwareentwicklung. Ich lernte nicht nur technisch eine Menge – von API-Handling bis Event-Management –, sondern auch, wie man **Probleme strukturiert löst**, wie man **mit Rückschlägen umgeht**, wie man sich in ein neues Thema **einarbeitet**, ohne zu verzweifeln.
+
+Ich lernte, Fragen zu stellen, Kritik anzunehmen und Verantwortung zu tragen.
+
+Am Ende war es nicht das Toolset, das mich geprägt hat – sondern die Erfahrung, dass man mit Code **etwas Greifbares schaffen** kann. Dass aus Zeilen Text echte Funktionalität wird, die anderen hilft. Und dass es okay ist, am Anfang nicht alles zu wissen – solange man bereit ist, sich reinzuhängen.
+
+## Was bleibt
+
+Noch heute denke ich oft an diese Zeit zurück. Sie war intensiv, aufregend, manchmal frustrierend – aber vor allem war sie der Startpunkt. Der Ort, an dem ich zum ersten Mal erleben durfte, was es heißt, **Softwareentwickler zu sein**.
+
+Minova hat mir nicht nur die Chance gegeben, einzusteigen – sie haben mir den Raum gegeben, zu wachsen.
+
+Und dafür bin ich bis heute dankbar.
