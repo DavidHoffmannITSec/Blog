@@ -23,6 +23,8 @@ blitzschnell die Lösung berechnen und sie visuell darstellen und auf Wunsch sog
 Bei der Umsetzung kombinierte ich Bildverarbeitung, Texterkennung und Webautomatisierung Technologien, die mir bis dahin nur 
 theoretisch bekannt waren.
 
+## Abschlussprojekt
+
 Mein Abschlussprojekt entwickelte ich für die Simplifier AG in Würzburg: eine Staging-App, mit der sich Inhalte zwischen verschiedenen 
 Systeminstanzen übertragen ließen. Die Simplifier-Plattform basiert auf einem Low-Code-Ansatz, bei dem Anwendungen durch Drag-and-Drop 
 von Widgets und grafischer Konfiguration erstellt werden können, ganz ohne klassische Programmierung. Bis zu diesem Zeitpunkt fehlte 
@@ -30,6 +32,8 @@ jedoch eine Möglichkeit, solche erstellten Apps, Widgets oder Konfigurationen v
 zu übertragen. Meine App ermöglichte genau das, über gezielte POST-, GET- und PUT-Requests Daten effizient zu migrieren. 
 Dieses Projekt gab mir nicht nur tiefere Einblicke in REST-APIs und Deployment-Prozesse, sondern zeigte mir auch, wie viel Mehrwert 
 durch die gezielte Automatisierung geschaffen werden kann.
+
+## Weitere Ausbildungsinhalte
 
 Neben der Softwareentwicklung erhielten wir auch fundiertes Wissen in der Systemintegration. Der Umgang mit Hardwarekomponenten wie
 Servern, Switches und Routern war ein wesentlicher Teil der Ausbildung. Im Labor lernten wir, Netzwerke aufzubauen und zu konfigurieren, 
