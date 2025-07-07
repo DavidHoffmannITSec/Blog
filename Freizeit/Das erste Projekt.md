@@ -13,7 +13,8 @@ dem Thema Schleifen verbrachten, was für mich eine Ewigkeit war.
 Doch statt mich zu langweilen, wurde ich neugierig. Während in der Schule noch for- und while-Schleifen geübt wurden, saß ich zuhause schon an 
 Methoden/Funktionen. Ich wollte mehr und ich wollte schneller lernen. Und so brachte ich mir nach und nach selbst die Themen bei, 
 die eigentlich erst in den kommenden Ausbildungsmonaten auf dem Plan standen. Ich war versessen darauf, zu verstehen, wie Dinge funktionieren und 
-wie ich sie benutzen kann.
+wie ich sie benutzen kann. Ich programmierte mit den Grundlagen, die ich schon verstand ein Textbasiertes Adventure Spiel, worin ich eine Story erfand
+und man durch seine eigene Auswahl die Geschichte und das Ende verändern kann.
 
 ## Das zweite Jahr
 
