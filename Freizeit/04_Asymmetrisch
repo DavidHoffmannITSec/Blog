@@ -1,0 +1,50 @@
+# Wie DavoHash512 der Anfang von DavoCrypt4096 wurde
+
+Als ich endlich den letzten Testfall meines selbst entwickelten Hash-Algorithmus **DavoHash512** durchlaufen ließ, fühlte es sich an, als hätte 
+ich ein digitales Meisterwerk erschaffen, eines, das auf elegante Weise durch deterministische Chaoslogik schützt. 
+Doch kaum war dieses Kapitel abgeschlossen, klopfte die nächste Herausforderung an meine Tür. 
+
+Was wäre, wenn ich nicht nur prüfen könnte, ob Daten verändert wurden, sondern sie auch sicher übertragen könnte? Ein Algorithmus, der verschlüsselt, 
+signiert und die Vertraulichkeit garantiert, mit **eigenen** Schlüsseln. Kein vorhandenes RSA. Kein copy-paste aus GitHub. 
+Und so begann die Entwicklung von **DavoCrypt4096**.
+
+---
+
+##  Der Anfang von der Asymmetrischen Verschlüsselung
+
+Ich habe mich zunächst wochenlang in mathematische Konzepte eingelesen, Modulo-Arithmetik, Primzahlgenerierung, Miller-Rabin-Test, 
+Bitmusterstreuung und Entropiequellen. Wenn man seine eigene Kryptografie entwickelt, gibt es keine Ausreden. Du bist dein eigener Crypto-Auditor.
+
+Der erste Schritt war klar: Ich brauchte ein robustes Verfahren zur Schlüsselerzeugung. Keine halbgaren Zufallszahlen, sondern starke Primzahlen
+mit innerer Struktur und Widerstand gegen bekannte Angriffe. Also schrieb ich mir meine eigene `KeyGenerator`-Klasse in Java und statt einfach 
+zwei zufällige 2048-Bit-Zahlen zu nehmen, entwickelte ich ein mehrstufiges Verfahren:
+
+- **Parallele Primzahlberechnung** mit `CompletableFuture`, um zwei starke Primzahlen gleichzeitig zu ermitteln.
+- **Verbesserte Primzahlen** mit Bitmuster-Streuung, Feedback-Schleifen und iterativen Transformationen, basierend auf mathematischen Konstanten wie π, φ und e.
+- **Flexible Wahl des öffentlichen Exponenten**, der sich automatisch anpasst.
+
+Das Ergebnis, ein 4096-Bit starker Schlüsselsatz, bestehend aus `modulus`, `publicKey` und `privateKey`.
+
+
+## Der nächste Schritt
+
+Mit der Schlüsselgenerierung in der Tasche war der nächste Schritt die Verschlüsselung selbst. Und so wurde `DavoCrypt4096` geboren mein eigener 
+kryptografischer Baukasten.
+
+Ich implementierte:
+
+- **Blockweise Verschlüsselung**, inklusive intelligenter Aufteilung großer Texte
+- **Entschlüsselung mit Signaturprüfung**, wobei jeder entschlüsselte Text mit einem DavoHash512 überprüft wird
+- **Signature by Design**: Vor jeder Verschlüsselung wird eine Signatur des Klartexts + eines dynamisch generierten Salts erzeugt, der aus 
+    Systemzustand, Threads, Speicher und Umgebungsvariablen abgeleitet wird.
+- **Datei-Verschlüsselung** auf Knopfdruck mit Support für Speichern und Laden der Schlüssel aus eigenen Dateien.
+
+Das Ganze war mehr als ein „Hobbyprojekt“, es wurde ein Framework mit echter Anwendbarkeit.
+
+
+## Und jetzt?
+
+Nach Monate langer Arbeit und Mühe, habe ich nun mit **DavoCrypt4096** ein System, das Daten verschlüsseln, entschlüsseln, signieren und prüfen
+kann, komplett in Java, ohne externe Abhängigkeiten, voll anpassbar.
+
+Der nächste Schritt? Eine Symmetrische Verschlüsselung.
