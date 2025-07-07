@@ -1,0 +1,70 @@
+# DavoSec256 – Meine eigene symmetrische Verschlüsselung in Java
+
+Nach dem Abschluss meiner asymmetrischen Verschlüsselung **DavoCrypt4096** und dem Hash-Algorithmus **DavoHash512** spürte ich, dass noch 
+etwas fehlte. Ich hatte nun die Fähigkeit, Daten sicher zu signieren, zu verschlüsseln, zu verifizieren, alles auf Basis eigener 
+kryptografischer Werkzeuge. Doch ein wichtiger Bereich war noch unberührt geblieben.
+
+Mir war klar, dass ich nicht einfach ein AES-Konstrukt kopieren oder einen Standard-Algorithmus leicht abwandeln wollte. Nein, ich wollte ein 
+individuelles, von Grund auf durchdachtes AES-256 2.0 entwickeln. Einen Schlüsselgenerator, der nicht nur zufällig war, sondern intelligent. 
+Eine Lösung, die aus Entropie, Systemdaten und kontrollierter Nichtlinearität einen geheimen Schlüssel erzeugt, der wirklich schwer zu 
+rekonstruieren ist. Das war die Geburtsstunde von **DavoSec256**, meiner eigenen symmetrischen Verschlüsselung mit individuell erzeugter 
+P-Box, Rundenlogik und Timing-Schutz.
+
+Ich begann mit der wohl kritischsten Komponente: Der Schlüsselableitung.
+
+## Der Weg zum Schlüssel
+
+Die Klasse `CustomKeyGenerator` war der erste Meilenstein. Sie sollte aus einem komplexen Seed und einem stark verarbeiteten Salt einen 
+stabilen 256-Bit-Schlüssel erzeugen, wiederholbar, aber gleichzeitig schwer vorhersehbar. Mein Ziel war es, dass sich selbst bei minimaler 
+Änderung im Seed oder Salt das Ergebnis drastisch verändert, ähnlich wie bei einem Avalanche-Effekt in Hashfunktionen.
+
+Der Seed selbst war kein einfacher Zufallsstring. Ich verwendete eine Mischung aus `System.nanoTime()`, `System.currentTimeMillis()`, dem 
+HashCode des Objekts und Multiplikatoren aus der Primzahlarithmetik. Daraus entstand ein Bitmuster, das ich mit einem `Random`-Generator 
+weiter verwürfelte. Zeichen für Zeichen baute ich einen 32-stelligen Seed auf, der bereits in seiner Erzeugung voller interner Rückkopplung war.
+
+Das Salt war ein eigenes kleines Kunstwerk: 64 Byte Entropie, die nicht nur zufällig waren, sondern zusätzlich mehrfach bearbeitet wurden. 
+Bitrotationen (links und rechts), XORs mit Zeitwerten, systembedingte Zufallsquellen, eigene Hash-Funktionen auf Byte-Ebene und Permutationen, 
+die an dynamische S-Box-Transformationen erinnern. Dieses Salt sollte niemals zweimal gleich aussehen, selbst bei identischem Seed.
+
+## Die P-Box
+
+In vielen klassischen Verschlüsselungsverfahren wie DES oder Blowfish spielt die sogenannte P-Box eine entscheidende Rolle. Ich wollte mein 
+eigenes P-Box-Modell entwickeln, eine Permutationsbox, die jedes Byte in einer anderen Reihenfolge behandelt. Dazu generierte ich aus einer 
+weiteren Entropiequelle eine zufällige Permutation der Byte-Indizes. Ein einfacher Shuffle, könnte man denken, aber ich kombinierte das mit 
+einem variablen Speicherlimit, sodass bei mehr verfügbarem RAM mehr Runden und komplexere P-Boxen erzeugt wurden.
+
+Die P-Box wird einmalig bei der Initialisierung erzeugt und dann in jeder Runde auf den aktuellen Schlüssel angewendet. Das bedeutet, dass
+selbst bei identischem Seed und Salt, aber einem leicht veränderten Systemzustand (z. B. mehr RAM), ein anderer Schlüssel entstehen kann.
+
+## Die Runden: Rotation, XOR, Shuffle
+
+Mit Schlüssel, Salt und P-Box ausgestattet, begann ich mit dem eigentlichen Derivierungsprozess. Die zentrale Schleife durchläuft je nach 
+Systemkonfiguration zwischen 100 und 150 Runden.
+
+In jeder Runde wird jedes Byte des Schlüssels mehrfach manipuliert:
+
+- Zuerst XOR mit einem dynamisch generierten S-Box-Wert.
+- Dann wende ich die P-Box an, wodurch die Reihenfolge der Bytes verändert wird.
+- Danach rotiere ich jedes Byte – abwechselnd nach links und rechts, je nach Rundenparität.
+- Ich XORe jedes Byte mit einer Hash-Funktion, die auf dem Seed basiert.
+- Alle 5 Runden wird der gesamte Schlüssel erneut durchmischt. Ein kontrolliertes Durcheinander, das die Diffusion erhöht.
+
+Zwischen den Runden baue ich künstliche Verzögerungen ein. Nicht durch `Thread.sleep()`, sondern durch rechenintensive, zufällige 
+„No-Op“-Schleifen, die auf Zeit- und Seedwerten basieren. Das schützt gegen Timing-Angriffe und erschwert die Analyse durch Angreifer, die sich 
+auf präzise Ausführungszeiten verlassen.
+
+## Die Rückgewinnung: Sicher, aber reproduzierbar
+
+Ein spannender Aspekt: Ich kann mit dem gleichen Seed und Salt den Schlüssel rekonstruieren, vollständig deterministisch. Das war mir wichtig. 
+Schließlich will ich in einer echten Anwendung nicht jedes Mal einen völlig neuen Schlüssel erzeugen, sondern z. B. bei Dateioperationen 
+denselben Schlüssel erneut herstellen können, um zu entschlüsseln. Die Funktion `reconstructKey()` liefert exakt dasselbe Byte-Array wie beim 
+ersten Mal, vorausgesetzt, Seed und Salt stimmen.
+
+## Fazit: Ein persönlicher Baukasten für Symmetrie
+
+DavoSec256 ist für mich mehr als nur ein Experiment. Ich habe vollständige Verschlüsselungen erschaffen. Mit einer KDF, die aus der Tiefe des 
+Systems schöpft. Mit Bitoperationen, Permutationen, Chaos und Struktur. Und vor allem mit dem Ziel, aus gängigen Angriffsmustern bewusst 
+auszubrechen.
+
+Natürlich ist mir klar, dass eigene Kryptografie niemals leichtfertig eingesetzt werden sollte, ohne gründliche Prüfung. Aber genau deshalb 
+schreibe ich alles selbst, um zu verstehen, wie Kryptografie funktioniert, wo sie angreifbar ist und wie man sie besser machen kann.
