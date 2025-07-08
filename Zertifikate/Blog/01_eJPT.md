@@ -69,27 +69,26 @@ Als der Abend kam, wurde ich müde, war aber zufrieden mit mir selber. Ich habe 
 Und vor allem habe ich verstanden, worauf es wirklich ankommt. Nicht auf hektisches Herumprobieren. Sondern auf strukturierte Angehensweise.
 
 
-## Tag 2: Der letzte Schliff
+## Tag 2
 
-Heute geht alles ruhiger. Frühstück, kurze Wiederholung meiner Notizen, und dann schaue ich mir die **offenen Fragen** an – mit klarem Kopf.
+Der zweite Prüfungstag beginnt früh am Morgen. Ich stand auf, trank einen Kaffee und starte um 8 Uhr frisch und ausgeruht wieder.  
+Mein Plan war es, die noch offenen Fragen systematisch abzuarbeiten und die Prüfung abzugeben.
 
-Ich entdecke ein System, das in **drei Fragen** eine Rolle spielt. Und plötzlich wird mir klar:  
-💡 **Diese Aufgaben gehören zusammen. Ich kann sie in einem Rutsch abarbeiten.**
+Ich ging die gesamte Liste der Aufgaben noch einmal ganz genau durch, ich las mir jede Frage aufmerksam durch und starte mehrere Bruteforce-Angriffe, eine 
+bewährte Methode, die oft Türen öffnet, wenn andere Wege versperrt sind. Während die Tools liefen, gönnte ich mir eine kleine Pause und aß etwas, um Kraft zu tanken.
 
-Ich gehe konzentriert vor, knacke weitere Hosts, lese Logs, interpretiere Fehlermeldungen. Ich löse Problem für Problem – methodisch und mit System.
+Schon bald wurde klar, dass die Mühe sich auszahlt hat. Die Bruteforce-Angriffe waren erfolgreich. Ich konnte mich auf 2 Systemen einloggen, bekam 
+Zugriff auf wichtige Bereiche und fand eine Flag nach der anderen. Jeder gefundene Hinweis brachte mich einen Schritt näher ans Ziel.
 
-Gegen Mittag bin ich fertig. Ich überprüfe nochmal alle Antworten, überfliege die Fragen, gleiche mit meinen Notizen ab – und dann:
+Gegen Mittag, nach intensiver Arbeit, hatte ich alle Aufgaben gelöst. Ich überprüfte nochmals sorgfältig jede Antwort, glich alles mit meinen Notizen ab und 
+fühle mich bereit.
 
-**„Prüfung abschließen“**
+Dann kam der große Moment. Ich klicke auf **„Submit Exam“**. Sekunden später erscheint auf dem Bildschirm ein grünes **„Passed“.**  
 
----
+Nach rund **16 Stunden** intensiver Arbeit, die ich auf zwei Tage verteilt hatte, durchströmte mich eine riesige Erleichterung und Freude.  
 
-## Sekunden der Spannung – Das Ergebnis
-
-Wenige Sekunden später: **Bestanden. Mit sehr hoher Punktzahl.**
-
-Ein Moment voller Stolz. Nicht nur, weil ich das Zertifikat hatte, sondern weil ich wusste:  
-👉 **Ich habe mir dieses Wissen erarbeitet. Und ich bin bereit für mehr.**
+Mein eJPT-Zertifikat liegt digital vor mir. Das war der Beweis, das ich selbstständig Penetrationtests durchführen und Schwachstellen ausnutzen kann.
+Dieser Erfolg fühlte sich großartig an und motiviert mich, noch weiterzugehen.
 
 ---
 
@@ -97,22 +96,21 @@ Ein Moment voller Stolz. Nicht nur, weil ich das Zertifikat hatte, sondern weil 
 
 ### ✅ Pro
 
-- **Der Kurs reicht aus**, um die Prüfung sicher zu bestehen – ohne externe Ressourcen.
-- **Die Kursinhalte sind praxisnah**, methodisch und realistisch – man lernt Techniken, die in echten Umgebungen funktionieren.
-- **Die Prüfung selbst läuft stabil und performant**, keine Verbindungsprobleme, alles flüssig.
-- **Man hat mehr als genug Zeit** – auch mit Pausen und Pausen dazwischen bleibt noch genug Luft.
+- **Der Kurs reicht aus**, um die Prüfung sicher zu bestehen, ohne externe Ressourcen
+- **Die Kursinhalte sind praxisnah**, methodisch und realistisch. Man lernt Techniken, die in der Umgebungen funktionieren
+- **Die Prüfung selbst läuft stabil und performant**, keine Verbindungsprobleme, Tools funktionieren
+- **Man hat mehr als genug Zeit** – auch mit Pausen und Pausen dazwischen bleibt noch genug Luft
 
 ### ❌ Kontra
 
-- **Viele Kursinhalte wiederholen sich** – das kann bei längerem Lernen monoton werden.
-- **Die Video-Tutorials ähneln sich stark** – oft ändern sich nur kleine Details und man weiß schon, was passiert.  
-  Das verleitet dazu, vorzuspulen – und das ist schade.
+- **Die Video-Tutorials ähneln sich stark**, sehr monoton. Oft ändern sich nur kleine Details und man weiß schon, was passiert
+  Das verleitet dazu, vorzuspulen und das ist schade
 
 ---
 
 ## Tipps für alle, die die eJPT bestehen wollen
 
-💡 **Meine wichtigsten Empfehlungen aus der Praxis:**
+**Meine wichtigsten Empfehlungen aus der Praxis:**
 
 1. **Nicht zu kompliziert denken!**  
    Die Lösung ist oft einfacher, als man glaubt. Verlier dich nicht in Details.
@@ -121,9 +119,9 @@ Ein Moment voller Stolz. Nicht nur, weil ich das Zertifikat hatte, sondern weil 
    Vieles lässt sich 1:1 daraus ableiten.
 
 3. **Bruteforcen nicht unterschätzen!**  
-   Tools wie `hydra` und `john` können dir schnell die Tür öffnen – richtig eingesetzt, sind sie mächtig.
+   Tools wie "hydra" oder "john" können dir schnell die Tür öffnen
 
-4. **Lies alle Fragen durch – von Anfang bis Ende.**  
+4. **Lies alle Fragen durch von Anfang bis Ende.**  
    Viele Aufgaben hängen zusammen. Nutze das aus! Du musst Exploit-Schritte nicht doppelt machen.
 
 5. **Mache dir gute Notizen während der Prüfung:**  
@@ -133,21 +131,5 @@ Ein Moment voller Stolz. Nicht nur, weil ich das Zertifikat hatte, sondern weil 
    - Welche Exploits hast du probiert?  
    - Welche Passwörter hast du gefunden?
 
-6. **Mach Pause. Ernsthaft.**  
-   Lass `hydra` oder `john` laufen und geh eine Stunde spazieren. Danach hast du einen frischen Blick und siehst vielleicht, was du vorher übersehen hast.
-
----
-
-## Fazit: Der erste große Meilenstein
-
-Die eJPT-Prüfung war für mich nicht einfach ein Test – **es war ein Erlebnis**. Eine Mischung aus Stress, Konzentration, Euphorie, Frustration und Freude. Und es hat sich gelohnt.  
-
-Ich habe nicht nur ein Zertifikat – ich habe Klarheit. Über meine Fähigkeiten, über meine Arbeitsweise, über meinen Weg in die IT-Sicherheit.  
-
-Und das war erst der Anfang.
-
----
-
-🗓️ *Abgelegt am 27.05.2025 von David*
-
-*Hinweis: In diesem Beitrag wurden keine prüfungsspezifischen Details offengelegt, die gegen die eJPT-Richtlinien verstoßen würden.*
+6. **Mach Pausen**  
+   Du hast mehr als genug Zeit. Gönn dir eine Pause, dann hast du einen frischen Blick und siehst vielleicht, was du vorher übersehen hast.
