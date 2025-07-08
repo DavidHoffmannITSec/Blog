@@ -1,7 +1,7 @@
 # Mein Weg zur eJPT-Zertifizierung  
 ---
 
-## Die Motivation: Ich wollte es wissen
+## Die Motivation
 
 Nach etwa drei Monaten täglichem Üben auf Plattformen wie **TryHackMe** und **HackTheBox** wurde mir klar, dass ich einen Beweis für mich
 selber will. Einen echten, greifbaren Nachweis, dass ich nicht nur „rumspiele“, sondern gezielt und strukturiert Schwachstellen analysieren kann.  
@@ -10,7 +10,7 @@ Die **eJPT-Zertifizierung (Junior Penetration Tester)** schien perfekt für den 
 Multiple Choice Fragen + Praxis.
 
 
-## Die Vorbereitung: Kurs, Tools und ein eigenes Wiki
+## Die Vorbereitung
 
 Ich entschied mich für den offiziellen Kurs **eJPT** von eLearnSecurity und ganz ehrlich, er reicht komplett aus, um die Prüfung zu bestehen, auch 
 ohne Vorkenntnisse. Ich habe jede einzelne Lektion angeschaut, alle Übungen durchgearbeitet und alles dokumentiert.  
